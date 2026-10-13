@@ -23,13 +23,16 @@ public class Romain {
 
 	public void recevoirCoup(int forceCoup) {
 		force = force - forceCoup;
-		if (force == 0) {
+		if (force <= 0) {
 			parler("J'abandonne !");
 		}
 		else {
-			parler("Aïe");
-		};
-		
-			 
+			parler("Aïe ! (force = " + force + ")");
+		};		 
 	}
+
+	//@Override
+	//public String toString() {
+	//	return nom;
+	//}
 }
